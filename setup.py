@@ -140,7 +140,7 @@ class CMakeBuild(build_ext):
 
     def initialize_options(self):
         build_ext.initialize_options(self)
-        self.base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+        self.base_dir = os.path.abspath(os.path.dirname(__file__))
 
     def finalize_options(self):
         build_ext.finalize_options(self)
